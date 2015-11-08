@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Solid"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "Queries in Swift done right."
 
   # This description is used to generate tags and improve search results.
