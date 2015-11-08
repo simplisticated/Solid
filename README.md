@@ -34,8 +34,7 @@ let selection1 = (sourceArray1 as NSArray)
                      // Temporary result: [10, 128, 256]
 
     .endQuery()      // This method returns result of selection
-
-// selection1 is an array equal to [10, 128, 256]
+                     // In current case, result is an array equal to [10, 128, 256]
 
 
 let selection2 = (sourceArray1 as NSArray)
@@ -46,9 +45,7 @@ let selection2 = (sourceArray1 as NSArray)
         // Checks whether at least one element is more than 300
         ($0 as! Int) > 300
     })
-    .endQuery()
-
-// selection2 is a boolean value equal to true
+    .endQuery()      // Returns boolean value equal to true
 
 
 /*
