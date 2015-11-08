@@ -98,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				69D4CEED1BEFF24D0089C94F /* Flows */,
+				69D4CEF41BEFF3DE0089C94F /* Libraries */,
 				69D4CEBF1BEFF0270089C94F /* AppDelegate.swift */,
 				69D4CEC61BEFF0280089C94F /* Assets.xcassets */,
 				69D4CEC81BEFF0280089C94F /* LaunchScreen.storyboard */,
@@ -147,6 +148,22 @@
 				69D4CEF11BEFF25C0089C94F /* MainViewController.xib */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		69D4CEF41BEFF3DE0089C94F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				69D4CEF51BEFF3EC0089C94F /* Solid */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		69D4CEF51BEFF3EC0089C94F /* Solid */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Solid;
+			path = ../../../../Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
