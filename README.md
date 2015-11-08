@@ -26,19 +26,24 @@ let sourceArray1 = [1, 5, 10, 128, 256, 1024, 2048, 4096, 8000, 8390]
 
 let selection1 = (sourceArray1 as NSArray)
     .beginQuery()    // Each query should begin with this call
+
     .skip(2)         // Removes first two elements from result selection
+                     // Temporary result: [10, 128, 256, 1024, 2048, 4096, 8000, 8390]
+
     .take(3)         // Removes all elements but first three from result selection
+                     // Temporary result: [10, 128, 256]
+
     .endQuery()      // This method returns result of selection
 
 // selection1 is an array equal to [10, 128, 256]
 
 
 let selection2 = (sourceArray1 as NSArray)
-    .beginQuery()    //
-    .skip(4)         // temporary result: [256, 1024, 2048, 4096, 8000, 8390]
-    .select(2)       // temporary result: [256, 1024]
+    .beginQuery()
+    .skip(4)         // Temporary result: [256, 1024, 2048, 4096, 8000, 8390]
+    .select(2)       // Temporary result: [256, 1024]
     .contains({
-        // checks whether at least one element is more than 300
+        // Checks whether at least one element is more than 300
         ($0 as! Int) > 300
     })
     .endQuery()
@@ -58,7 +63,7 @@ let selection3 = (sourceArray3 as NSArray)
     .all({
         ($0 as! Int) > 20
     })
-    .endQuery()    // returns true
+    .endQuery()    // Returns true
 
 ```
 
