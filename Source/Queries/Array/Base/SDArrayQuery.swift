@@ -30,6 +30,11 @@ public class SDArrayQuery: SDQuery {
     
     // MARK: Public methods
     
+    func performWithArray(array: [AnyObject]) -> [AnyObject] {
+        assertionFailure("This method should be overriden in subclass")
+        return []
+    }
+    
     public func skip(count: Int) -> SDSkipQuery {
         let skipQuery = SDSkipQuery(count: count)
         skipQuery.previousQuery = self
@@ -40,6 +45,12 @@ public class SDArrayQuery: SDQuery {
         let takeQuery = SDTakeQuery(count: count)
         takeQuery.previousQuery = self
         return takeQuery
+    }
+    
+    public func cast<T: AnyObject>(type type: T.Type) -> SDArrayCastQuery<T> {
+        let castQuery = SDArrayCastQuery<T>()
+        castQuery.previousQuery = self
+        return castQuery
     }
     
     public func contains(predicate: SDContainsQueryPredicate) -> SDContainsQuery {
@@ -71,9 +82,9 @@ public class SDArrayQuery: SDQuery {
         
         // Retrieve chain of queries
         
-        let chainOfQueries = queryChain()
+        let allQueries = queryChain()
         
-        guard chainOfQueries.count != 0 else {
+        guard allQueries.count != 0 else {
             return sourceArray
         }
         
@@ -82,39 +93,10 @@ public class SDArrayQuery: SDQuery {
         
         var resultArray = sourceArray
         
-        for query in chainOfQueries {
-            if query is SDSkipQuery {
-                let skipQuery = query as! SDSkipQuery
-                
-                if resultArray.count > 0 {
-                    let startIndexOfSelection = skipQuery.count
-                    
-                    let currentMaxIndexInResultArray = resultArray.count - 1
-                    
-                    if startIndexOfSelection > currentMaxIndexInResultArray {
-                        resultArray = []
-                    }
-                    else {
-                        let numberOfElementsInSelection = resultArray.count - startIndexOfSelection
-                        
-                        let range = NSMakeRange(startIndexOfSelection, numberOfElementsInSelection)
-                        resultArray = (resultArray as NSArray).subarrayWithRange(range) as [AnyObject]
-                    }
-                }
-            }
-            else if query is SDTakeQuery {
-                let takeQuery = query as! SDTakeQuery
-                
-                if resultArray.count > 0 {
-                    var countToTake = takeQuery.count
-                    
-                    if countToTake > resultArray.count {
-                        countToTake = resultArray.count
-                    }
-                    
-                    let range = NSMakeRange(0, countToTake)
-                    resultArray = (resultArray as NSArray).subarrayWithRange(range) as [AnyObject]
-                }
+        for query in allQueries {
+            if query is SDArrayQuery {
+                let arrayQuery = query as! SDArrayQuery
+                resultArray = arrayQuery.performWithArray(resultArray)
             }
         }
         

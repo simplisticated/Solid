@@ -52,6 +52,41 @@ public class SDTakeQuery: SDArrayQuery {
     
     // MARK: Public methods
     
+    override func performWithArray(array: [AnyObject]) -> [AnyObject] {
+        // Check whether take count is bigger than 0
+        
+        guard count > 0 else {
+            return []
+        }
+        
+        
+        // Check whether number of elements in array is bigger than 0
+        
+        guard array.count > 0 else {
+            return []
+        }
+        
+        
+        // Obtain number of elements to take
+        
+        var countToTake = count
+        
+        if countToTake > array.count {
+            countToTake = array.count
+        }
+        
+        
+        // Obtain result array
+        
+        let range = NSMakeRange(0, countToTake)
+        let resultArray = (array as NSArray).subarrayWithRange(range) as [AnyObject]
+        
+        
+        // Return result
+        
+        return resultArray
+    }
+    
     
     // MARK: Private methods
     

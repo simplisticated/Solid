@@ -1,14 +1,14 @@
 //
-//  SDSourceQuery.swift
+//  SDCastQuery.swift
 //  Solid
 //
-//  Created by Igor Matyushkin on 09.11.15.
+//  Created by Igor Matyushkin on 10.11.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
 //
 
 import UIKit
 
-public class SDSourceQuery: SDArrayQuery {
+public class SDCastQuery: SDQuery {
     
     // MARK: Class variables & properties
     
@@ -18,15 +18,6 @@ public class SDSourceQuery: SDArrayQuery {
     
     // MARK: Initializers
     
-    public init(sourceArray: [AnyObject]) {
-        super.init()
-        
-        
-        // Initialize source array
-        
-        _sourceArray = sourceArray
-    }
-    
     
     // MARK: Deinitializer
     
@@ -35,14 +26,6 @@ public class SDSourceQuery: SDArrayQuery {
     
     
     // MARK: Variables & properties
-    
-    private var _sourceArray: [AnyObject]!
-    
-    public var sourceArray: [AnyObject] {
-        get {
-            return _sourceArray
-        }
-    }
     
     
     // MARK: Public methods

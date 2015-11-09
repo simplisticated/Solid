@@ -1,5 +1,5 @@
 //
-//  SDSkipQuery.swift
+//  SDAllQuery.swift
 //  Solid
 //
 //  Created by Igor Matyushkin on 09.11.15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SDSkipQuery: SDArrayQuery {
+public class SDAllQuery: SDBooleanQuery {
     
     // MARK: Class variables & properties
     
@@ -18,18 +18,13 @@ public class SDSkipQuery: SDArrayQuery {
     
     // MARK: Initializers
     
-    public init(count: Int) {
+    public init(predicate: SDAllQueryPredicate) {
         super.init()
         
         
-        // Assertion for count
+        // Initialize predicate
         
-        assert(count >= 0, "Count should not be less than 0")
-        
-        
-        // Initialize count
-        
-        _count = count
+        _predicate = predicate
     }
     
     
@@ -41,11 +36,11 @@ public class SDSkipQuery: SDArrayQuery {
     
     // MARK: Variables & properties
     
-    private var _count: Int!
+    private var _predicate: SDAllQueryPredicate!
     
-    public var count: Int {
+    public var predicate: SDAllQueryPredicate {
         get {
-            return _count
+            return _predicate
         }
     }
     

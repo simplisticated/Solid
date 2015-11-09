@@ -1,6 +1,6 @@
 //
-//  SDAllQuery.swift
-//  SolidDemo
+//  SDSourceQuery.swift
+//  Solid
 //
 //  Created by Igor Matyushkin on 09.11.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SDAllQuery: SDBooleanQuery {
+public class SDSourceQuery: SDArrayQuery {
     
     // MARK: Class variables & properties
     
@@ -18,13 +18,13 @@ public class SDAllQuery: SDBooleanQuery {
     
     // MARK: Initializers
     
-    public init(predicate: SDAllQueryPredicate) {
+    public init(sourceArray: [AnyObject]) {
         super.init()
         
         
-        // Initialize predicate
+        // Initialize source array
         
-        _predicate = predicate
+        _sourceArray = sourceArray
     }
     
     
@@ -36,16 +36,20 @@ public class SDAllQuery: SDBooleanQuery {
     
     // MARK: Variables & properties
     
-    private var _predicate: SDAllQueryPredicate!
+    private var _sourceArray: [AnyObject]!
     
-    public var predicate: SDAllQueryPredicate {
+    public var sourceArray: [AnyObject] {
         get {
-            return _predicate
+            return _sourceArray
         }
     }
     
     
     // MARK: Public methods
+    
+    override func performWithArray(array: [AnyObject]) -> [AnyObject] {
+        return array
+    }
     
     
     // MARK: Private methods
