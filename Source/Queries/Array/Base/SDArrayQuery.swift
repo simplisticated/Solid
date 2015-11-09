@@ -47,10 +47,10 @@ public class SDArrayQuery: SDQuery {
         return takeQuery
     }
     
-    public func obtain(predicate: SDSelectQueryPredicate) -> SDSelectQuery {
-        let selectQuery = SDSelectQuery(predicate: predicate)
-        selectQuery.previousQuery = self
-        return selectQuery
+    public func obtain(predicate: SDObtainQueryPredicate) -> SDObtainQuery {
+        let obtainQuery = SDObtainQuery(predicate: predicate)
+        obtainQuery.previousQuery = self
+        return obtainQuery
     }
     
     public func filter(predicate: SDFilterQueryPredicate) -> SDFilterQuery {

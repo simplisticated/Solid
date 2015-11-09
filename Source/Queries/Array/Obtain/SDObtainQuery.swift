@@ -1,5 +1,5 @@
 //
-//  SDSelectQuery.swift
+//  SDObtainQuery.swift
 //  Solid
 //
 //  Created by Igor Matyushkin on 10.11.15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SDSelectQuery: SDArrayQuery {
+public class SDObtainQuery: SDArrayQuery {
     
     // MARK: Class variables & properties
     
@@ -18,7 +18,7 @@ public class SDSelectQuery: SDArrayQuery {
     
     // MARK: Initializers
     
-    public init(predicate: SDSelectQueryPredicate) {
+    public init(predicate: SDObtainQueryPredicate) {
         super.init()
         
         
@@ -36,9 +36,9 @@ public class SDSelectQuery: SDArrayQuery {
     
     // MARK: Variables & properties
     
-    private var _predicate: SDSelectQueryPredicate!
+    private var _predicate: SDObtainQueryPredicate!
     
-    public var predicate: SDSelectQueryPredicate {
+    public var predicate: SDObtainQueryPredicate {
         get {
             return _predicate
         }

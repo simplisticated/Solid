@@ -1,5 +1,5 @@
 //
-//  SDSelectQueryPredicate.swift
+//  SDObtainQueryPredicate.swift
 //  Solid
 //
 //  Created by Igor Matyushkin on 10.11.15.
@@ -8,5 +8,5 @@
 
 import Foundation
 
-public typealias SDSelectQueryPredicate = (element: AnyObject) -> AnyObject
+public typealias SDObtainQueryPredicate = (element: AnyObject) -> AnyObject
 
