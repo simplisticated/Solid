@@ -57,9 +57,7 @@ let sourceArray2 = [28, 41, 817, 211]
 
 let selection3 = (sourceArray3 as NSArray)
     .beginQuery()
-    .all({
-        ($0 as! Int) > 20
-    })
+    .all({ ($0 as! Int) > 20 })
     .endQuery()    // Returns true
 
 ```
