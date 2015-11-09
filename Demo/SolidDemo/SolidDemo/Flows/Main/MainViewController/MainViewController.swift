@@ -27,6 +27,8 @@ class MainViewController: UIViewController {
     
     // MARK: Outlets
     
+    @IBOutlet private weak var textView: UITextView!
+    
     
     // MARK: Variables & properties
     
@@ -35,6 +37,20 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // Start selection
+        
+        let sourceArray1 = [1, 5, 10, 128, 256, 1024, 2048, 4096, 8000, 8390]
+        
+        let selection1 = (sourceArray1 as NSArray)
+            .beginQuery()
+            .skip(2)
+            .take(4)
+            .cast(type: NSDecimalNumber.self)
+            .endQuery()
+        
+        NSLog("Result of selection: %@", selection1)
     }
     
     override func didReceiveMemoryWarning() {

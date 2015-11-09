@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69C365941BF0F4F5000A4DFC /* NSSetExtensionQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C365931BF0F4F5000A4DFC /* NSSetExtensionQueries.swift */; };
 		69D4CEC01BEFF0270089C94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CEBF1BEFF0270089C94F /* AppDelegate.swift */; };
 		69D4CEC71BEFF0280089C94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CEC61BEFF0280089C94F /* Assets.xcassets */; };
 		69D4CECA1BEFF0280089C94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CEC81BEFF0280089C94F /* LaunchScreen.storyboard */; };
@@ -15,16 +16,18 @@
 		69D4CEF21BEFF25C0089C94F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CEF01BEFF25C0089C94F /* MainViewController.swift */; };
 		69D4CEF31BEFF25C0089C94F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CEF11BEFF25C0089C94F /* MainViewController.xib */; };
 		69D4CF181BEFFDEC0089C94F /* NSArrayExtensionQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF0D1BEFFDEC0089C94F /* NSArrayExtensionQueries.swift */; };
-		69D4CF191BEFFDEC0089C94F /* SDArrayQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF101BEFFDEC0089C94F /* SDArrayQuery.swift */; };
-		69D4CF1A1BEFFDEC0089C94F /* SDSourceQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF111BEFFDEC0089C94F /* SDSourceQuery.swift */; };
-		69D4CF1B1BEFFDEC0089C94F /* SDTakeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF121BEFFDEC0089C94F /* SDTakeQuery.swift */; };
-		69D4CF1C1BEFFDEC0089C94F /* SDQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF141BEFFDEC0089C94F /* SDQuery.swift */; };
-		69D4CF1D1BEFFDEC0089C94F /* SDBooleanQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF161BEFFDEC0089C94F /* SDBooleanQuery.swift */; };
-		69D4CF1E1BEFFDEC0089C94F /* SDContainsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF171BEFFDEC0089C94F /* SDContainsQuery.swift */; };
-		69D4CF201BF005CB0089C94F /* SDSkipQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF1F1BF005CB0089C94F /* SDSkipQuery.swift */; };
-		69D4CF221BF00D050089C94F /* SDContainsQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF211BF00D050089C94F /* SDContainsQueryPredicate.swift */; };
-		69D4CF241BF00F2E0089C94F /* SDAllQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF231BF00F2E0089C94F /* SDAllQuery.swift */; };
-		69D4CF261BF00F610089C94F /* SDAllQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF251BF00F610089C94F /* SDAllQueryPredicate.swift */; };
+		69E43C901BF1440500EB1491 /* SDArrayQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C7A1BF1440500EB1491 /* SDArrayQuery.swift */; };
+		69E43C911BF1440500EB1491 /* SDSkipQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C7C1BF1440500EB1491 /* SDSkipQuery.swift */; };
+		69E43C921BF1440500EB1491 /* SDSourceQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C7E1BF1440500EB1491 /* SDSourceQuery.swift */; };
+		69E43C931BF1440500EB1491 /* SDTakeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C801BF1440500EB1491 /* SDTakeQuery.swift */; };
+		69E43C941BF1440500EB1491 /* SDQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C821BF1440500EB1491 /* SDQuery.swift */; };
+		69E43C951BF1440500EB1491 /* SDAllQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C851BF1440500EB1491 /* SDAllQuery.swift */; };
+		69E43C961BF1440500EB1491 /* SDAllQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C861BF1440500EB1491 /* SDAllQueryPredicate.swift */; };
+		69E43C971BF1440500EB1491 /* SDBooleanQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C881BF1440500EB1491 /* SDBooleanQuery.swift */; };
+		69E43C981BF1440500EB1491 /* SDContainsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C8A1BF1440500EB1491 /* SDContainsQuery.swift */; };
+		69E43C991BF1440500EB1491 /* SDContainsQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C8B1BF1440500EB1491 /* SDContainsQueryPredicate.swift */; };
+		69E43C9A1BF1440500EB1491 /* SDArrayCastQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C8E1BF1440500EB1491 /* SDArrayCastQuery.swift */; };
+		69E43C9C1BF1444100EB1491 /* SDCastQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C9B1BF1444100EB1491 /* SDCastQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69C365931BF0F4F5000A4DFC /* NSSetExtensionQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSSetExtensionQueries.swift; sourceTree = "<group>"; };
 		69D4CEBC1BEFF0270089C94F /* SolidDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CEBF1BEFF0270089C94F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69D4CEC61BEFF0280089C94F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,16 +63,18 @@
 		69D4CEF01BEFF25C0089C94F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		69D4CEF11BEFF25C0089C94F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		69D4CF0D1BEFFDEC0089C94F /* NSArrayExtensionQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArrayExtensionQueries.swift; sourceTree = "<group>"; };
-		69D4CF101BEFFDEC0089C94F /* SDArrayQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDArrayQuery.swift; sourceTree = "<group>"; };
-		69D4CF111BEFFDEC0089C94F /* SDSourceQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSourceQuery.swift; sourceTree = "<group>"; };
-		69D4CF121BEFFDEC0089C94F /* SDTakeQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTakeQuery.swift; sourceTree = "<group>"; };
-		69D4CF141BEFFDEC0089C94F /* SDQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDQuery.swift; sourceTree = "<group>"; };
-		69D4CF161BEFFDEC0089C94F /* SDBooleanQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDBooleanQuery.swift; sourceTree = "<group>"; };
-		69D4CF171BEFFDEC0089C94F /* SDContainsQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDContainsQuery.swift; sourceTree = "<group>"; };
-		69D4CF1F1BF005CB0089C94F /* SDSkipQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSkipQuery.swift; sourceTree = "<group>"; };
-		69D4CF211BF00D050089C94F /* SDContainsQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDContainsQueryPredicate.swift; sourceTree = "<group>"; };
-		69D4CF231BF00F2E0089C94F /* SDAllQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDAllQuery.swift; sourceTree = "<group>"; };
-		69D4CF251BF00F610089C94F /* SDAllQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDAllQueryPredicate.swift; sourceTree = "<group>"; };
+		69E43C7A1BF1440500EB1491 /* SDArrayQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDArrayQuery.swift; sourceTree = "<group>"; };
+		69E43C7C1BF1440500EB1491 /* SDSkipQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSkipQuery.swift; sourceTree = "<group>"; };
+		69E43C7E1BF1440500EB1491 /* SDSourceQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSourceQuery.swift; sourceTree = "<group>"; };
+		69E43C801BF1440500EB1491 /* SDTakeQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTakeQuery.swift; sourceTree = "<group>"; };
+		69E43C821BF1440500EB1491 /* SDQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDQuery.swift; sourceTree = "<group>"; };
+		69E43C851BF1440500EB1491 /* SDAllQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDAllQuery.swift; sourceTree = "<group>"; };
+		69E43C861BF1440500EB1491 /* SDAllQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDAllQueryPredicate.swift; sourceTree = "<group>"; };
+		69E43C881BF1440500EB1491 /* SDBooleanQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDBooleanQuery.swift; sourceTree = "<group>"; };
+		69E43C8A1BF1440500EB1491 /* SDContainsQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDContainsQuery.swift; sourceTree = "<group>"; };
+		69E43C8B1BF1440500EB1491 /* SDContainsQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDContainsQueryPredicate.swift; sourceTree = "<group>"; };
+		69E43C8E1BF1440500EB1491 /* SDArrayCastQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDArrayCastQuery.swift; sourceTree = "<group>"; };
+		69E43C9B1BF1444100EB1491 /* SDCastQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCastQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				69D4CF0D1BEFFDEC0089C94F /* NSArrayExtensionQueries.swift */,
+				69C365931BF0F4F5000A4DFC /* NSSetExtensionQueries.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -201,42 +208,124 @@
 		69D4CF0E1BEFFDEC0089C94F /* Queries */ = {
 			isa = PBXGroup;
 			children = (
-				69D4CF131BEFFDEC0089C94F /* Base */,
-				69D4CF0F1BEFFDEC0089C94F /* Array */,
-				69D4CF151BEFFDEC0089C94F /* Boolean */,
+				69E43C811BF1440500EB1491 /* Base */,
+				69E43C781BF1440500EB1491 /* Array */,
+				69E43C831BF1440500EB1491 /* Boolean */,
+				69E43C8C1BF1440500EB1491 /* Cast */,
 			);
 			path = Queries;
 			sourceTree = "<group>";
 		};
-		69D4CF0F1BEFFDEC0089C94F /* Array */ = {
+		69E43C781BF1440500EB1491 /* Array */ = {
 			isa = PBXGroup;
 			children = (
-				69D4CF101BEFFDEC0089C94F /* SDArrayQuery.swift */,
-				69D4CF111BEFFDEC0089C94F /* SDSourceQuery.swift */,
-				69D4CF1F1BF005CB0089C94F /* SDSkipQuery.swift */,
-				69D4CF121BEFFDEC0089C94F /* SDTakeQuery.swift */,
+				69E43C791BF1440500EB1491 /* Base */,
+				69E43C7D1BF1440500EB1491 /* Source */,
+				69E43C7B1BF1440500EB1491 /* Skip */,
+				69E43C7F1BF1440500EB1491 /* Take */,
 			);
 			path = Array;
 			sourceTree = "<group>";
 		};
-		69D4CF131BEFFDEC0089C94F /* Base */ = {
+		69E43C791BF1440500EB1491 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				69D4CF141BEFFDEC0089C94F /* SDQuery.swift */,
+				69E43C7A1BF1440500EB1491 /* SDArrayQuery.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		69D4CF151BEFFDEC0089C94F /* Boolean */ = {
+		69E43C7B1BF1440500EB1491 /* Skip */ = {
 			isa = PBXGroup;
 			children = (
-				69D4CF161BEFFDEC0089C94F /* SDBooleanQuery.swift */,
-				69D4CF171BEFFDEC0089C94F /* SDContainsQuery.swift */,
-				69D4CF211BF00D050089C94F /* SDContainsQueryPredicate.swift */,
-				69D4CF231BF00F2E0089C94F /* SDAllQuery.swift */,
-				69D4CF251BF00F610089C94F /* SDAllQueryPredicate.swift */,
+				69E43C7C1BF1440500EB1491 /* SDSkipQuery.swift */,
+			);
+			path = Skip;
+			sourceTree = "<group>";
+		};
+		69E43C7D1BF1440500EB1491 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C7E1BF1440500EB1491 /* SDSourceQuery.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		69E43C7F1BF1440500EB1491 /* Take */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C801BF1440500EB1491 /* SDTakeQuery.swift */,
+			);
+			path = Take;
+			sourceTree = "<group>";
+		};
+		69E43C811BF1440500EB1491 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C821BF1440500EB1491 /* SDQuery.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		69E43C831BF1440500EB1491 /* Boolean */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C871BF1440500EB1491 /* Base */,
+				69E43C891BF1440500EB1491 /* Contains */,
+				69E43C841BF1440500EB1491 /* All */,
 			);
 			path = Boolean;
+			sourceTree = "<group>";
+		};
+		69E43C841BF1440500EB1491 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C851BF1440500EB1491 /* SDAllQuery.swift */,
+				69E43C861BF1440500EB1491 /* SDAllQueryPredicate.swift */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		69E43C871BF1440500EB1491 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C881BF1440500EB1491 /* SDBooleanQuery.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		69E43C891BF1440500EB1491 /* Contains */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C8A1BF1440500EB1491 /* SDContainsQuery.swift */,
+				69E43C8B1BF1440500EB1491 /* SDContainsQueryPredicate.swift */,
+			);
+			path = Contains;
+			sourceTree = "<group>";
+		};
+		69E43C8C1BF1440500EB1491 /* Cast */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C8F1BF1440500EB1491 /* Base */,
+				69E43C8D1BF1440500EB1491 /* ArrayCast */,
+			);
+			path = Cast;
+			sourceTree = "<group>";
+		};
+		69E43C8D1BF1440500EB1491 /* ArrayCast */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C8E1BF1440500EB1491 /* SDArrayCastQuery.swift */,
+			);
+			path = ArrayCast;
+			sourceTree = "<group>";
+		};
+		69E43C8F1BF1440500EB1491 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				69E43C9B1BF1444100EB1491 /* SDCastQuery.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,19 +459,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D4CF1C1BEFFDEC0089C94F /* SDQuery.swift in Sources */,
+				69E43C911BF1440500EB1491 /* SDSkipQuery.swift in Sources */,
 				69D4CEC01BEFF0270089C94F /* AppDelegate.swift in Sources */,
-				69D4CF191BEFFDEC0089C94F /* SDArrayQuery.swift in Sources */,
+				69E43C981BF1440500EB1491 /* SDContainsQuery.swift in Sources */,
 				69D4CEF21BEFF25C0089C94F /* MainViewController.swift in Sources */,
-				69D4CF1D1BEFFDEC0089C94F /* SDBooleanQuery.swift in Sources */,
-				69D4CF1A1BEFFDEC0089C94F /* SDSourceQuery.swift in Sources */,
-				69D4CF221BF00D050089C94F /* SDContainsQueryPredicate.swift in Sources */,
-				69D4CF201BF005CB0089C94F /* SDSkipQuery.swift in Sources */,
-				69D4CF1B1BEFFDEC0089C94F /* SDTakeQuery.swift in Sources */,
-				69D4CF241BF00F2E0089C94F /* SDAllQuery.swift in Sources */,
-				69D4CF261BF00F610089C94F /* SDAllQueryPredicate.swift in Sources */,
+				69E43C9C1BF1444100EB1491 /* SDCastQuery.swift in Sources */,
 				69D4CF181BEFFDEC0089C94F /* NSArrayExtensionQueries.swift in Sources */,
-				69D4CF1E1BEFFDEC0089C94F /* SDContainsQuery.swift in Sources */,
+				69E43C9A1BF1440500EB1491 /* SDArrayCastQuery.swift in Sources */,
+				69E43C941BF1440500EB1491 /* SDQuery.swift in Sources */,
+				69E43C951BF1440500EB1491 /* SDAllQuery.swift in Sources */,
+				69E43C901BF1440500EB1491 /* SDArrayQuery.swift in Sources */,
+				69E43C991BF1440500EB1491 /* SDContainsQueryPredicate.swift in Sources */,
+				69E43C921BF1440500EB1491 /* SDSourceQuery.swift in Sources */,
+				69E43C971BF1440500EB1491 /* SDBooleanQuery.swift in Sources */,
+				69E43C931BF1440500EB1491 /* SDTakeQuery.swift in Sources */,
+				69C365941BF0F4F5000A4DFC /* NSSetExtensionQueries.swift in Sources */,
+				69E43C961BF1440500EB1491 /* SDAllQueryPredicate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +693,7 @@
 				69D4CEE61BEFF0280089C94F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69D4CEE71BEFF0280089C94F /* Build configuration list for PBXNativeTarget "SolidDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +702,7 @@
 				69D4CEE91BEFF0280089C94F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69D4CEEA1BEFF0280089C94F /* Build configuration list for PBXNativeTarget "SolidDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -617,6 +711,7 @@
 				69D4CEEC1BEFF0280089C94F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
