@@ -40,7 +40,7 @@ let selection1 = (sourceArray1 as NSArray)
 let selection2 = (sourceArray1 as NSArray)
     .beginQuery()
     .skip(4)         // Temporary result: [256, 1024, 2048, 4096, 8000, 8390]
-    .select(2)       // Temporary result: [256, 1024]
+    .take(2)         // Temporary result: [256, 1024]
     .contains({
         // Checks whether at least one element is more than 300
         ($0 as! Int) > 300
