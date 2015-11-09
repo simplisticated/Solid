@@ -28,10 +28,10 @@
 		69E43C991BF1440500EB1491 /* SDContainsQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C8B1BF1440500EB1491 /* SDContainsQueryPredicate.swift */; };
 		69E43C9A1BF1440500EB1491 /* SDArrayCastQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C8E1BF1440500EB1491 /* SDArrayCastQuery.swift */; };
 		69E43C9C1BF1444100EB1491 /* SDCastQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C9B1BF1444100EB1491 /* SDCastQuery.swift */; };
-		69E43CA01BF14E1000EB1491 /* SDSelectQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C9F1BF14E1000EB1491 /* SDSelectQuery.swift */; };
 		69E43CA51BF14E6A00EB1491 /* SDFilterQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43CA41BF14E6A00EB1491 /* SDFilterQuery.swift */; };
-		69E43CA71BF14EC600EB1491 /* SDSelectQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43CA61BF14EC600EB1491 /* SDSelectQueryPredicate.swift */; };
 		69E43CA91BF1508C00EB1491 /* SDFilterQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43CA81BF1508C00EB1491 /* SDFilterQueryPredicate.swift */; };
+		69E43CAD1BF152D700EB1491 /* SDObtainQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43CAB1BF152D700EB1491 /* SDObtainQuery.swift */; };
+		69E43CAE1BF152D700EB1491 /* SDObtainQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43CAC1BF152D700EB1491 /* SDObtainQueryPredicate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,10 +79,10 @@
 		69E43C8B1BF1440500EB1491 /* SDContainsQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDContainsQueryPredicate.swift; sourceTree = "<group>"; };
 		69E43C8E1BF1440500EB1491 /* SDArrayCastQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDArrayCastQuery.swift; sourceTree = "<group>"; };
 		69E43C9B1BF1444100EB1491 /* SDCastQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCastQuery.swift; sourceTree = "<group>"; };
-		69E43C9F1BF14E1000EB1491 /* SDSelectQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSelectQuery.swift; sourceTree = "<group>"; };
 		69E43CA41BF14E6A00EB1491 /* SDFilterQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFilterQuery.swift; sourceTree = "<group>"; };
-		69E43CA61BF14EC600EB1491 /* SDSelectQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSelectQueryPredicate.swift; sourceTree = "<group>"; };
 		69E43CA81BF1508C00EB1491 /* SDFilterQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFilterQueryPredicate.swift; sourceTree = "<group>"; };
+		69E43CAB1BF152D700EB1491 /* SDObtainQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDObtainQuery.swift; sourceTree = "<group>"; };
+		69E43CAC1BF152D700EB1491 /* SDObtainQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDObtainQueryPredicate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,7 +231,7 @@
 				69E43C7D1BF1440500EB1491 /* Source */,
 				69E43C7B1BF1440500EB1491 /* Skip */,
 				69E43C7F1BF1440500EB1491 /* Take */,
-				69E43C9D1BF14DFA00EB1491 /* Select */,
+				69E43CAA1BF152D700EB1491 /* Obtain */,
 				69E43CA31BF14E5F00EB1491 /* Where */,
 			);
 			path = Array;
@@ -338,15 +338,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		69E43C9D1BF14DFA00EB1491 /* Select */ = {
-			isa = PBXGroup;
-			children = (
-				69E43C9F1BF14E1000EB1491 /* SDSelectQuery.swift */,
-				69E43CA61BF14EC600EB1491 /* SDSelectQueryPredicate.swift */,
-			);
-			path = Select;
-			sourceTree = "<group>";
-		};
 		69E43CA31BF14E5F00EB1491 /* Where */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +345,15 @@
 				69E43CA81BF1508C00EB1491 /* SDFilterQueryPredicate.swift */,
 			);
 			path = Where;
+			sourceTree = "<group>";
+		};
+		69E43CAA1BF152D700EB1491 /* Obtain */ = {
+			isa = PBXGroup;
+			children = (
+				69E43CAB1BF152D700EB1491 /* SDObtainQuery.swift */,
+				69E43CAC1BF152D700EB1491 /* SDObtainQueryPredicate.swift */,
+			);
+			path = Obtain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E43C911BF1440500EB1491 /* SDSkipQuery.swift in Sources */,
+				69E43CAE1BF152D700EB1491 /* SDObtainQueryPredicate.swift in Sources */,
 				69D4CEC01BEFF0270089C94F /* AppDelegate.swift in Sources */,
 				69E43C981BF1440500EB1491 /* SDContainsQuery.swift in Sources */,
 				69D4CEF21BEFF25C0089C94F /* MainViewController.swift in Sources */,
@@ -499,13 +500,12 @@
 				69E43C901BF1440500EB1491 /* SDArrayQuery.swift in Sources */,
 				69E43C991BF1440500EB1491 /* SDContainsQueryPredicate.swift in Sources */,
 				69E43CA91BF1508C00EB1491 /* SDFilterQueryPredicate.swift in Sources */,
-				69E43CA71BF14EC600EB1491 /* SDSelectQueryPredicate.swift in Sources */,
+				69E43CAD1BF152D700EB1491 /* SDObtainQuery.swift in Sources */,
 				69E43CA51BF14E6A00EB1491 /* SDFilterQuery.swift in Sources */,
 				69E43C921BF1440500EB1491 /* SDSourceQuery.swift in Sources */,
 				69E43C971BF1440500EB1491 /* SDBooleanQuery.swift in Sources */,
 				69E43C931BF1440500EB1491 /* SDTakeQuery.swift in Sources */,
 				69C365941BF0F4F5000A4DFC /* NSSetExtensionQueries.swift in Sources */,
-				69E43CA01BF14E1000EB1491 /* SDSelectQuery.swift in Sources */,
 				69E43C961BF1440500EB1491 /* SDAllQueryPredicate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
