@@ -47,10 +47,16 @@ public class SDArrayQuery: SDQuery {
         return takeQuery
     }
     
-    public func cast<T: AnyObject>(type type: T.Type) -> SDArrayCastQuery<T> {
-        let castQuery = SDArrayCastQuery<T>()
-        castQuery.previousQuery = self
-        return castQuery
+    public func obtain(predicate: SDSelectQueryPredicate) -> SDSelectQuery {
+        let selectQuery = SDSelectQuery(predicate: predicate)
+        selectQuery.previousQuery = self
+        return selectQuery
+    }
+    
+    public func filter(predicate: SDFilterQueryPredicate) -> SDFilterQuery {
+        let filterQuery = SDFilterQuery(predicate: predicate)
+        filterQuery.previousQuery = self
+        return filterQuery
     }
     
     public func contains(predicate: SDContainsQueryPredicate) -> SDContainsQuery {
@@ -63,6 +69,12 @@ public class SDArrayQuery: SDQuery {
         let allQuery = SDAllQuery(predicate: predicate)
         allQuery.previousQuery = self
         return allQuery
+    }
+    
+    public func cast<T: AnyObject>(type type: T.Type) -> SDArrayCastQuery<T> {
+        let castQuery = SDArrayCastQuery<T>()
+        castQuery.previousQuery = self
+        return castQuery
     }
     
     public func endQuery() -> [AnyObject] {
