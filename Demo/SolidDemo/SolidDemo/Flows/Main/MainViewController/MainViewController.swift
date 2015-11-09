@@ -47,7 +47,12 @@ class MainViewController: UIViewController {
             .beginQuery()
             .skip(2)
             .take(4)
-            .cast(type: NSDecimalNumber.self)
+            .filter({ (element) -> Bool in
+                (element as! Int) > 200
+            })
+            .obtain { (element) -> AnyObject in
+                (element as! Int) + 200
+            }
         
         var logText = ""
         
@@ -61,7 +66,7 @@ class MainViewController: UIViewController {
         logText += String(format: "Result of selection: %@", arguments: [result])
         
         textView.text = logText
-        textView.font = UIFont.systemFontOfSize(15.0)
+        textView.font = UIFont.systemFontOfSize(20.0)
     }
     
     override func didReceiveMemoryWarning() {
