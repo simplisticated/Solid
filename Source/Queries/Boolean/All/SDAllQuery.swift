@@ -47,6 +47,25 @@ public class SDAllQuery: SDBooleanQuery {
     
     // MARK: Public methods
     
+    public override func queryDescription() -> String {
+        return String(format: "Check that all elements satisfy predicate's condition", arguments: [])
+    }
+    
+    override func performWithArray(array: [AnyObject]) -> Bool {
+        var result = true
+        
+        for element in array {
+            let resultForElement = predicate(element: element)
+            
+            if !resultForElement {
+                result = false
+                break
+            }
+        }
+        
+        return result
+    }
+    
     
     // MARK: Private methods
     

@@ -47,6 +47,10 @@ public class SDSourceQuery: SDArrayQuery {
     
     // MARK: Public methods
     
+    public override func queryDescription() -> String {
+        return String(format: "Source array: %@", arguments: [sourceArray])
+    }
+    
     override func performWithArray(array: [AnyObject]) -> [AnyObject] {
         return array
     }

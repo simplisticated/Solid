@@ -34,6 +34,10 @@ public class SDArrayCastQuery<ResultArrayType: AnyObject>: SDCastQuery {
     
     // MARK: Public methods
     
+    public override func queryDescription() -> String {
+        return "Cast to type"
+    }
+    
     public func endQuery() -> [ResultArrayType] {
         // Check existance of previous query
         

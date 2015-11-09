@@ -85,6 +85,28 @@ public class SDQuery: NSObject {
         return queryCollection
     }
     
+    public func queryDescription() -> String {
+        assertionFailure("This method should be overriden in subclass")
+        return ""
+    }
+    
+    public func logCurrentQuery() -> SDQuery {
+        let descriptionForCurrentQuery = queryDescription()
+        NSLog("%@", descriptionForCurrentQuery)
+        
+        return self
+    }
+    
+    public func logQueryChain() -> SDQuery {
+        let allQueries = queryChain()
+        
+        for query in allQueries {
+            query.logCurrentQuery()
+        }
+        
+        return self
+    }
+    
     
     // MARK: Private methods
     

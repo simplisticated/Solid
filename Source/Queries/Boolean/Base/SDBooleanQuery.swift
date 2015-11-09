@@ -30,6 +30,11 @@ public class SDBooleanQuery: SDQuery {
     
     // MARK: Public methods
     
+    func performWithArray(array: [AnyObject]) -> Bool {
+        assertionFailure("This method should be overriden in subclass")
+        return false
+    }
+    
     public func endQuery() -> Bool {
         // Check existance of previous query
         
@@ -60,44 +65,12 @@ public class SDBooleanQuery: SDQuery {
         
         // Obtain result
         
-        var result: Bool? = nil
-        
-        if self is SDContainsQuery {
-            let containsQuery = self as! SDContainsQuery
-            
-            result = false
-            
-            for element in resultArray! {
-                let resultForElement = containsQuery.predicate(element: element)
-                
-                if resultForElement {
-                    result = true
-                    break
-                }
-            }
-        }
-        else if self is SDAllQuery {
-            let allQuery = self as! SDAllQuery
-            
-            result = true
-            
-            for element in resultArray! {
-                let resultForElement = allQuery.predicate(element: element)
-                
-                if !resultForElement {
-                    result = false
-                    break
-                }
-            }
-        }
-        else {
-            result = false
-        }
+        let result = performWithArray(resultArray!)
         
         
         // Return result
         
-        return result!
+        return result
     }
     
     
