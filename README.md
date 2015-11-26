@@ -50,7 +50,7 @@ let selection2 = (sourceArray as NSArray)
 
 /*
  * Let's assume we want to check whether
- * all elements of array are bigger than 0
+ * all elements of array are bigger than 20
  */
 
 let selection3 = (sourceArray as NSArray)
