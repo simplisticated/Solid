@@ -51,7 +51,7 @@ public class SDAllQuery: SDBooleanQuery {
         return String(format: "Check that all elements satisfy predicate's condition", arguments: [])
     }
     
-    override func performWithArray(array: [AnyObject]) -> Bool {
+    public override func performWithArray(array: [AnyObject]) -> Bool {
         var result = true
         
         for element in array {

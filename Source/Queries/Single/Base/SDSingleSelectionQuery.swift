@@ -1,14 +1,14 @@
 //
-//  SDBooleanQuery.swift
-//  Solid
+//  SDSingleSelectionQuery.swift
+//  SolidDemo
 //
-//  Created by Igor Matyushkin on 09.11.15.
+//  Created by Igor Matyushkin on 26.11.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
 //
 
 import UIKit
 
-public class SDBooleanQuery: SDQuery {
+public class SDSingleSelectionQuery: SDQuery {
     
     // MARK: Class variables & properties
     
@@ -30,23 +30,23 @@ public class SDBooleanQuery: SDQuery {
     
     // MARK: Public methods
     
-    public func performWithArray(array: [AnyObject]) -> Bool {
+    public func performWithArray(array: [AnyObject]) -> AnyObject? {
         assertionFailure("This method should be overriden in subclass")
-        return false
+        return nil
     }
     
-    public func endQuery() -> Bool {
+    public func endQuery() -> AnyObject? {
         // Check existance of previous query
         
         guard previousQuery != nil else {
-            return false
+            return nil
         }
         
         
         // Check that previous query is not a boolean query
         
-        guard !(previousQuery is SDBooleanQuery) else {
-            return false
+        guard !(previousQuery is SDSingleSelectionQuery) else {
+            return nil
         }
         
         

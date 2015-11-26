@@ -56,7 +56,7 @@ public class SDTakeQuery: SDArrayQuery {
         return String(format: "Take %d elements", arguments: [count])
     }
     
-    override func performWithArray(array: [AnyObject]) -> [AnyObject] {
+    public override func performWithArray(array: [AnyObject]) -> [AnyObject] {
         // Check whether take count is bigger than 0
         
         guard count > 0 else {

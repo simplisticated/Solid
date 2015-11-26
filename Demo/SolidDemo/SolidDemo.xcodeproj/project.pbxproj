@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69209A551C07799A0042C727 /* SDSingleSelectionQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69209A541C07799A0042C727 /* SDSingleSelectionQuery.swift */; };
+		69209A571C077B650042C727 /* SDFirstQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69209A561C077B650042C727 /* SDFirstQuery.swift */; };
+		69209A591C077BE60042C727 /* SDLastQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69209A581C077BE60042C727 /* SDLastQuery.swift */; };
 		695A3D231BF1569C008E3B45 /* SDFilterQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695A3D211BF1569C008E3B45 /* SDFilterQuery.swift */; };
 		695A3D241BF1569C008E3B45 /* SDFilterQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695A3D221BF1569C008E3B45 /* SDFilterQueryPredicate.swift */; };
 		69C365941BF0F4F5000A4DFC /* NSSetExtensionQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C365931BF0F4F5000A4DFC /* NSSetExtensionQueries.swift */; };
@@ -52,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69209A541C07799A0042C727 /* SDSingleSelectionQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSingleSelectionQuery.swift; sourceTree = "<group>"; };
+		69209A561C077B650042C727 /* SDFirstQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFirstQuery.swift; sourceTree = "<group>"; };
+		69209A581C077BE60042C727 /* SDLastQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDLastQuery.swift; sourceTree = "<group>"; };
 		695A3D211BF1569C008E3B45 /* SDFilterQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFilterQuery.swift; sourceTree = "<group>"; };
 		695A3D221BF1569C008E3B45 /* SDFilterQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFilterQueryPredicate.swift; sourceTree = "<group>"; };
 		69C365931BF0F4F5000A4DFC /* NSSetExtensionQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSSetExtensionQueries.swift; sourceTree = "<group>"; };
@@ -110,6 +116,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69209A501C0779690042C727 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				69209A511C0779880042C727 /* Base */,
+				69209A521C0779880042C727 /* First */,
+				69209A531C0779880042C727 /* Last */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		69209A511C0779880042C727 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				69209A541C07799A0042C727 /* SDSingleSelectionQuery.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		69209A521C0779880042C727 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				69209A561C077B650042C727 /* SDFirstQuery.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		69209A531C0779880042C727 /* Last */ = {
+			isa = PBXGroup;
+			children = (
+				69209A581C077BE60042C727 /* SDLastQuery.swift */,
+			);
+			path = Last;
+			sourceTree = "<group>";
+		};
 		695A3D201BF1569C008E3B45 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +267,7 @@
 			children = (
 				69E43C811BF1440500EB1491 /* Base */,
 				69E43C781BF1440500EB1491 /* Array */,
+				69209A501C0779690042C727 /* Single */,
 				69E43C831BF1440500EB1491 /* Boolean */,
 				69E43C8C1BF1440500EB1491 /* Cast */,
 			);
@@ -487,9 +528,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69209A571C077B650042C727 /* SDFirstQuery.swift in Sources */,
 				69E43C911BF1440500EB1491 /* SDSkipQuery.swift in Sources */,
 				69E43CAE1BF152D700EB1491 /* SDObtainQueryPredicate.swift in Sources */,
 				69D4CEC01BEFF0270089C94F /* AppDelegate.swift in Sources */,
+				69209A591C077BE60042C727 /* SDLastQuery.swift in Sources */,
 				69E43C981BF1440500EB1491 /* SDContainsQuery.swift in Sources */,
 				69D4CEF21BEFF25C0089C94F /* MainViewController.swift in Sources */,
 				69E43C9C1BF1444100EB1491 /* SDCastQuery.swift in Sources */,
@@ -504,6 +547,7 @@
 				69E43CAD1BF152D700EB1491 /* SDObtainQuery.swift in Sources */,
 				69E43C921BF1440500EB1491 /* SDSourceQuery.swift in Sources */,
 				69E43C971BF1440500EB1491 /* SDBooleanQuery.swift in Sources */,
+				69209A551C07799A0042C727 /* SDSingleSelectionQuery.swift in Sources */,
 				69E43C931BF1440500EB1491 /* SDTakeQuery.swift in Sources */,
 				69C365941BF0F4F5000A4DFC /* NSSetExtensionQueries.swift in Sources */,
 				69E43C961BF1440500EB1491 /* SDAllQueryPredicate.swift in Sources */,

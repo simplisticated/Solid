@@ -51,7 +51,7 @@ public class SDObtainQuery: SDArrayQuery {
         return String(format: "Select elements by predicate", arguments: [])
     }
     
-    override func performWithArray(array: [AnyObject]) -> [AnyObject] {
+    public override func performWithArray(array: [AnyObject]) -> [AnyObject] {
         var resultArray: [AnyObject] = []
         
         for element in array {

@@ -56,7 +56,7 @@ public class SDSkipQuery: SDArrayQuery {
         return String(format: "Skip %d elements", arguments: [count])
     }
     
-    override func performWithArray(array: [AnyObject]) -> [AnyObject] {
+    public override func performWithArray(array: [AnyObject]) -> [AnyObject] {
         // Check whether required skip count is bigger than 0
         
         guard count > 0 else {

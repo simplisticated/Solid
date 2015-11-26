@@ -30,7 +30,7 @@ public class SDArrayQuery: SDQuery {
     
     // MARK: Public methods
     
-    func performWithArray(array: [AnyObject]) -> [AnyObject] {
+    public func performWithArray(array: [AnyObject]) -> [AnyObject] {
         assertionFailure("This method should be overriden in subclass")
         return []
     }
@@ -69,6 +69,18 @@ public class SDArrayQuery: SDQuery {
         let allQuery = SDAllQuery(predicate: predicate)
         allQuery.previousQuery = self
         return allQuery
+    }
+    
+    public func first() -> SDFirstQuery {
+        let firstQuery = SDFirstQuery()
+        firstQuery.previousQuery = self
+        return firstQuery
+    }
+    
+    public func last() -> SDLastQuery {
+        let lastQuery = SDLastQuery()
+        lastQuery.previousQuery = self
+        return lastQuery
     }
     
     public func cast<T: AnyObject>(type type: T.Type) -> SDArrayCastQuery<T> {

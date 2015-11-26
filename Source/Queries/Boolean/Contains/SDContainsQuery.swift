@@ -51,7 +51,7 @@ public class SDContainsQuery: SDBooleanQuery {
         return String(format: "Check that at least one element satisfies predicate's condition", arguments: [])
     }
     
-    override func performWithArray(array: [AnyObject]) -> Bool {
+    public override func performWithArray(array: [AnyObject]) -> Bool {
         var result = false
         
         for element in array {
