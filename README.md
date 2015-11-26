@@ -76,7 +76,11 @@ let selection4 = (sourceArray as NSArray)
         // Multiply each number in array by 2 times
         ($0 as! Int) * 2
     })
-    .endQuery()    // Returns [512, 2048, 4096, 8192, 16000, 16780]
+    .sort({
+        // Sort in descending order
+        ($0 as! Int) > ($1 as! Int)
+    })
+    .endQuery()    // Returns [16780, 16000, 8192, 4096, 2048, 512]
 ```
 
 ## License
