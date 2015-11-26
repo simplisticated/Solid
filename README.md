@@ -81,6 +81,31 @@ let selection4 = (sourceArray as NSArray)
         ($0 as! Int) > ($1 as! Int)
     })
     .endQuery()    // Returns [16780, 16000, 8192, 4096, 2048, 512]
+
+
+/*
+ * You can also select first or last value from the array.
+ */
+
+let selection5 = (sourceArray as NSArray)
+    .beginQuery()
+    .first()
+    .endQuery()
+
+let selection6 = (sourceArray as NSArray)
+    .beginQuery()
+    .last()
+    .endQuery()
+
+
+/*
+ * Also it's possible to cast result array to required type.
+ */
+
+let selection7 = (sourceArray as NSArray)
+    .beginQuery()
+    .cast(NSNumber.self)
+    .endQuery()
 ```
 
 ## License
