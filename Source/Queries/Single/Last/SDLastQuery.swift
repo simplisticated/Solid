@@ -18,7 +18,7 @@ public class SDLastQuery: SDSingleSelectionQuery {
     
     // MARK: Initializers
     
-    override init() {
+    public override init() {
         super.init()
     }
     

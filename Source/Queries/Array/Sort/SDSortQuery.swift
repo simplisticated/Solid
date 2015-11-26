@@ -1,14 +1,14 @@
 //
-//  SDFilterQuery.swift
-//  Solid
+//  SDSortQuery.swift
+//  SolidDemo
 //
-//  Created by Igor Matyushkin on 10.11.15.
+//  Created by Igor Matyushkin on 26.11.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
 //
 
 import UIKit
 
-public class SDFilterQuery: SDArrayQuery {
+public class SDSortQuery: SDArrayQuery {
     
     // MARK: Class variables & properties
     
@@ -18,7 +18,7 @@ public class SDFilterQuery: SDArrayQuery {
     
     // MARK: Initializers
     
-    public init(predicate: SDFilterQueryPredicate) {
+    public init(predicate: SDSortQueryPredicate) {
         super.init()
         
         
@@ -36,9 +36,9 @@ public class SDFilterQuery: SDArrayQuery {
     
     // MARK: Variables & properties
     
-    private var _predicate: SDFilterQueryPredicate!
+    private var _predicate: SDSortQueryPredicate!
     
-    public var predicate: SDFilterQueryPredicate {
+    public var predicate: SDSortQueryPredicate {
         get {
             return _predicate
         }
@@ -48,18 +48,12 @@ public class SDFilterQuery: SDArrayQuery {
     // MARK: Public methods
     
     public override func queryDescription() -> String {
-        return "Filter elements by predicate"
+        return "Sort array"
     }
     
     public override func performWithArray(array: [AnyObject]) -> [AnyObject] {
-        var resultArray: [AnyObject] = []
-        
-        for element in array {
-            let elementSatisfiesConditions = predicate(element: element)
-            
-            if elementSatisfiesConditions {
-                resultArray.append(element)
-            }
+        let resultArray = array.sort { (left, right) -> Bool in
+            return predicate(left: left, right: right)
         }
         
         return resultArray

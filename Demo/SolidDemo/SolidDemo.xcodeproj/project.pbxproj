@@ -10,6 +10,8 @@
 		69209A551C07799A0042C727 /* SDSingleSelectionQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69209A541C07799A0042C727 /* SDSingleSelectionQuery.swift */; };
 		69209A571C077B650042C727 /* SDFirstQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69209A561C077B650042C727 /* SDFirstQuery.swift */; };
 		69209A591C077BE60042C727 /* SDLastQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69209A581C077BE60042C727 /* SDLastQuery.swift */; };
+		69209A5C1C077CE50042C727 /* SDSortQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69209A5B1C077CE50042C727 /* SDSortQuery.swift */; };
+		69209A5E1C077D230042C727 /* SDSortQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69209A5D1C077D230042C727 /* SDSortQueryPredicate.swift */; };
 		695A3D231BF1569C008E3B45 /* SDFilterQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695A3D211BF1569C008E3B45 /* SDFilterQuery.swift */; };
 		695A3D241BF1569C008E3B45 /* SDFilterQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695A3D221BF1569C008E3B45 /* SDFilterQueryPredicate.swift */; };
 		69C365941BF0F4F5000A4DFC /* NSSetExtensionQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C365931BF0F4F5000A4DFC /* NSSetExtensionQueries.swift */; };
@@ -58,6 +60,8 @@
 		69209A541C07799A0042C727 /* SDSingleSelectionQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSingleSelectionQuery.swift; sourceTree = "<group>"; };
 		69209A561C077B650042C727 /* SDFirstQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFirstQuery.swift; sourceTree = "<group>"; };
 		69209A581C077BE60042C727 /* SDLastQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDLastQuery.swift; sourceTree = "<group>"; };
+		69209A5B1C077CE50042C727 /* SDSortQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSortQuery.swift; sourceTree = "<group>"; };
+		69209A5D1C077D230042C727 /* SDSortQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSortQueryPredicate.swift; sourceTree = "<group>"; };
 		695A3D211BF1569C008E3B45 /* SDFilterQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFilterQuery.swift; sourceTree = "<group>"; };
 		695A3D221BF1569C008E3B45 /* SDFilterQueryPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFilterQueryPredicate.swift; sourceTree = "<group>"; };
 		69C365931BF0F4F5000A4DFC /* NSSetExtensionQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSSetExtensionQueries.swift; sourceTree = "<group>"; };
@@ -148,6 +152,15 @@
 				69209A581C077BE60042C727 /* SDLastQuery.swift */,
 			);
 			path = Last;
+			sourceTree = "<group>";
+		};
+		69209A5A1C077CD90042C727 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				69209A5B1C077CE50042C727 /* SDSortQuery.swift */,
+				69209A5D1C077D230042C727 /* SDSortQueryPredicate.swift */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 		695A3D201BF1569C008E3B45 /* Filter */ = {
@@ -283,6 +296,7 @@
 				69E43C7F1BF1440500EB1491 /* Take */,
 				69E43CAA1BF152D700EB1491 /* Obtain */,
 				695A3D201BF1569C008E3B45 /* Filter */,
+				69209A5A1C077CD90042C727 /* Sort */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -535,6 +549,7 @@
 				69209A591C077BE60042C727 /* SDLastQuery.swift in Sources */,
 				69E43C981BF1440500EB1491 /* SDContainsQuery.swift in Sources */,
 				69D4CEF21BEFF25C0089C94F /* MainViewController.swift in Sources */,
+				69209A5E1C077D230042C727 /* SDSortQueryPredicate.swift in Sources */,
 				69E43C9C1BF1444100EB1491 /* SDCastQuery.swift in Sources */,
 				695A3D231BF1569C008E3B45 /* SDFilterQuery.swift in Sources */,
 				69D4CF181BEFFDEC0089C94F /* NSArrayExtensionQueries.swift in Sources */,
@@ -545,6 +560,7 @@
 				69E43C901BF1440500EB1491 /* SDArrayQuery.swift in Sources */,
 				69E43C991BF1440500EB1491 /* SDContainsQueryPredicate.swift in Sources */,
 				69E43CAD1BF152D700EB1491 /* SDObtainQuery.swift in Sources */,
+				69209A5C1C077CE50042C727 /* SDSortQuery.swift in Sources */,
 				69E43C921BF1440500EB1491 /* SDSourceQuery.swift in Sources */,
 				69E43C971BF1440500EB1491 /* SDBooleanQuery.swift in Sources */,
 				69209A551C07799A0042C727 /* SDSingleSelectionQuery.swift in Sources */,
