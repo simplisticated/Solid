@@ -1,6 +1,6 @@
 //
 //  SDSortQueryPredicate.swift
-//  SolidDemo
+//  Solid
 //
 //  Created by Igor Matyushkin on 26.11.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
