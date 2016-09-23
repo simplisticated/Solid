@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
     
     // MARK: Outlets
     
-    @IBOutlet private weak var textView: UITextView!
+    @IBOutlet fileprivate weak var textView: UITextView!
     
     
     // MARK: Variables & properties
@@ -45,13 +45,14 @@ class MainViewController: UIViewController {
         
         let query = (sourceArray as NSArray)
             .beginQuery()
-            .skip(2)
-            .take(4)
-            .filter({ (element) -> Bool in
+            .skip(count: 2)
+            .take(count: 4)
+            .filter(predicate: { (element) -> Bool in
                 (element as! Int) > 200
             })
             .obtain { (element) -> AnyObject in
-                (element as! Int) + 200
+                let elementValue = element as! Int
+                return (elementValue + 200) as AnyObject
             }
         
         var logText = ""
@@ -66,7 +67,7 @@ class MainViewController: UIViewController {
         logText += String(format: "Result of selection: %@", arguments: [result])
         
         textView.text = logText
-        textView.font = UIFont.systemFontOfSize(20.0)
+        textView.font = UIFont.systemFont(ofSize: 20.0)
     }
     
     override func didReceiveMemoryWarning() {
