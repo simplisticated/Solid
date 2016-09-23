@@ -2,13 +2,20 @@
 <img src="https://github.com/igormatyushkin014/Solid/blob/master/Logo/logo-1024-300.png" alt="Solid" title="Solid">
 </p>
 
-# Solid
+<p align="center">
+<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/Solid.svg?maxAge=2592000"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/dt/Solid.svg?maxAge=2592000"></a>
+<a href="https://tldrlegal.com/license/mit-license"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat"></a>
+</p>
+
+# At a Glance
 
 The main purpose of this library is to make selections from arrays in Swift more clear and efficient.
 
 ##How To Get Started
 
-- Copy content of `Source` folder to your project.
+- Copy content of `Solid` folder to your project.
 
 or
 
@@ -16,8 +23,10 @@ or
 
 ## Requirements
 
-* iOS 8 and later
-* Xcode 7 and later
+* iOS 9.0 and later
+* Xcode 8 and later
+
+**Note**: For Swift 2.x use `Solid v1.2.3`. For Swift 3.0 use `Solid v3.0`.
 
 ## Usage
 
