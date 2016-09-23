@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Solid"
-  s.version      = "1.2.3"
+  s.version      = "3.0"
   s.summary      = "Queries in Swift done right."
 
   # This description is used to generate tags and improve search results.
@@ -56,7 +56,7 @@ New way to make queries in Swift.
   s.author             = { "Igor Matyushkin" => "igormatyushkin014@gmail.com" }
   #s.author    = "Igor Matyushkin"
   # s.authors            = { "Igor Matyushkin" => "igormatyushkin014@gmail.com" }
-  s.social_media_url   = "https://www.reddit.com/user/igor_matyushkin"
+  s.social_media_url   = "http://twitter.com/igormatyushkin1"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -65,7 +65,7 @@ New way to make queries in Swift.
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -91,7 +91,7 @@ New way to make queries in Swift.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Source", "Source/**/*"
+  s.source_files  = "Solid", "Solid/**/*"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
