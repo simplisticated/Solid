@@ -9,11 +9,11 @@
 <a href="https://tldrlegal.com/license/mit-license"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat"></a>
 </p>
 
-# At a Glance
+## At a Glance
 
 The main purpose of this library is to make selections from arrays in Swift more clear and efficient.
 
-##How To Get Started
+## How To Get Started
 
 - Copy content of `Solid` folder to your project.
 
